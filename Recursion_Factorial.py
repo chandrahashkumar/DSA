@@ -4,7 +4,7 @@ def fact(num):
     elif num == 0:
         return 1
     else:
-        return num * fact(num - 1)  # 5*4*3*2*1*1
+        return num * fact(num - 1)  # 5*4*3*2*1
     
 
 num = int(input("Enter number: "))

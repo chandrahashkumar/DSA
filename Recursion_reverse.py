@@ -26,5 +26,5 @@ def rev(num, reverse_num = 0):
 
         return rev(num , reverse_num)
     
-num = int(input("Enter number: "))
+num = int(input("Enter number: ")) //45
 print(rev(num))
