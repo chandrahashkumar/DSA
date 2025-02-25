@@ -33,9 +33,19 @@
 #         print("* ",end = " ")
 #     print(" ")
 
-list = []
-num = 5
-for i in range(num):
-    list.append(i)
+# list = []
+# num = 5
+# for i in range(num):
+#     list.append(i)
 
-print(list)
+# print(list)
+
+# l = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+# char = input("Enter a char: ")
+
+# p = l.indexof["char"]
+
+# print(l[-p-1])
+
+      
