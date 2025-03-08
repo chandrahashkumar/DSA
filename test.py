@@ -52,3 +52,18 @@
 # print("Regular String:", regular_string)
 # my_string="Hello" 
 # split_text = my_string.split(",")
+class person:
+    def __init__(self):
+        self.name = "Chandrahash"
+        self.course = "B.Tech AI & ML"
+        self.PRN = 240205241027
+        self.age = 19
+
+    def display(self):
+        print("Name: ", self.name)
+        print("Course: ", self.course)
+        print("PRN:: ", self.PRN)
+        print("Age: ", self.age)
+
+s1 = person()
+print(s1.display())
