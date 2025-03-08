@@ -48,4 +48,7 @@
 
 # print(l[-p-1])
 
-      
+# regular_string = r"C:\Python\file.txt"
+# print("Regular String:", regular_string)
+# my_string="Hello" 
+# split_text = my_string.split(",")
