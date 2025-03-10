@@ -12,11 +12,11 @@ class LinkedList:
             print("Linked list is empty.")
             return
         itr = self.head
-        llist = ''
+        list = ''
         while itr:
-            llist += str(itr.data) + '--->' if itr.next else str(itr.data)
+            list += str(itr.data) + '--->' if itr.next else str(itr.data)
             itr = itr.next
-        print(llist)
+        print(list)
     def get_length(self):
         count = 0
         itr = self.head
@@ -25,7 +25,7 @@ class LinkedList:
             itr = itr.next
         return count
     
-    def insert_at_begining(self,data):
+    def insert_at_beginning(self,data):
         node = Node(data, self.head)
         self.head = node
     
@@ -44,7 +44,7 @@ class LinkedList:
             raise Exception("Invalid index")
         
         if index == 0:
-            self.insert_at_begining(data)
+            self.insert_at_beginning(data)
             return
         
         count  = 0
@@ -81,23 +81,39 @@ class LinkedList:
         for data in data_list:
             self.insert_at_end(data)
 
-ll = LinkedList()
-ll.insert_at_begining(10)
-ll.insert_at_begining(50)
-ll.insert_at(1, 30)
-ll.insert_at_end(100)
-ll.print_list()
 
-ll.insert_values([4,6,8,9,1,5])
-ll.insert_at(3, 10)
-ll.remove_at(4)
-ll.print_list()
+# list_l = LinkedList()
+# list_l.insert_at_beginning(5)
+# list_l.insert_at_beginning(10)
+# list_l.insert_at_end(11)
+# list_l.insert_at(2,3)
+# list_l.remove_at()
+# list_l.print_list()
+# print(dir(Node))
 
 
-ll.insert_values(['banana','mango','grapes','orange'])
-ll.insert_at(2, 'apple')
-ll.remove_at(4)
-ll.print_list()
+print(dir(LinkedList))
+
+
+
+
+# ll = LinkedList()
+# ll.insert_at_begining(10)
+# ll.insert_at_begining(50)
+# ll.insert_at(1, 30)
+# ll.insert_at_end(100)
+# ll.print_list()
+
+# ll.insert_values([4,6,8,9,1,5])
+# ll.insert_at(3, 10)
+# ll.remove_at(4)
+# ll.print_list()
+
+
+# ll.insert_values(['banana','mango','grapes','orange'])
+# ll.insert_at(2, 'apple')
+# ll.remove_at(4)
+# ll.print_list()
 
 
         
