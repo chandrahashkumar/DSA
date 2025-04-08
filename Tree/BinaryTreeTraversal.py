@@ -27,13 +27,12 @@ def inorder_travel(root):
 
 
 
-root = Node(5)
-root.left = Node(4)
-root.right = Node(9)
-root.left.left = Node(7)
-root.left.right = Node(3)
-root.right.left = Node(6)
-root.right.right = Node(11)
+root = Node('N1')
+root.left = Node("N2")
+root.right = Node("N3")
+root.left.left = Node("N4")
+root.left.right = Node("N5")
+
 
 print("Pre order traversal")
 preorder_travel(root)

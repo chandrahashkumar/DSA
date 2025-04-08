@@ -10,6 +10,7 @@ class LinkedList:
         if self.head is None:
             print("List is empty")
             return
+
         itr = self.head
         listr = ''
         while itr:

@@ -11,8 +11,9 @@ for i in range(n):
         max_e = l[i]
     if l[i] < min_e:
         min_e = l[i]
-s_max = 0
-s_min = 0
+s_max = min_e
+s_min = max_e
+# [5,6,9,1,0,99,788]
 for i in range(n):
     if l[i]>s_max and l[i]!=max_e:
         smax = l[i]
