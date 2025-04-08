@@ -1,27 +1,26 @@
-# l = []
-# n = int(input("Enter number of elements: "))
-# for i in range(n):
-#     l.append(int(input(f"Enter element {i+1}: ")))
-#
-# min = l[0]
-# max = l[0]
-#
-# for i in range(n):
-#     if l[i] > max:
-#         max = l[i]
-#     if l[i] < min:
-#         min = l[i]
-# print(f"The minium and maximum is {min} and {max}.")
-#
-l = [6,6,9,44,8,991]
-max_val = max(l)
-min_val = min(l)
-# print(f"min: {lm}")
-# print(f"max: {m}")
-#
-# help(min)
+l = []
+n = int(input("Enter the number of elements: "))
+for i in range(n):
+    l.append(int(input(f"Enter the {i+1} element: ")))
 
-s_max = 0
-s_min = 0
-for  i in range(len(l)):
-    if
+max_val = l[0]
+min_val = l[0]
+for i in range(n):
+    if l[i]>max_val:
+        max_val = l[i]
+    if l[i]<min_val:
+        min_val = l[i]
+
+print(f"Max: {max_val} \nMin: {min_val}\n")
+
+se_max = min_val
+se_min = max_val
+
+for i in range(n):
+    if l[i]>se_max and l[i] != max_val:
+        se_max = l[i]
+    if l[i]<se_min and l[i] != min_val:
+        se_min = l[i]
+
+print(f"Second Max: {se_max} \nSecond Min: {se_min}\n")
+
