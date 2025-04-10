@@ -6,12 +6,12 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
-    def preappend(self,data):
+    def insert_at_head(self,data):
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
 
-    def append(self,data):
+    def insert_at_tail(self,data):
         if not self.head:
             self.head = Node(data)
             return
@@ -36,18 +36,14 @@ class LinkedList:
     def display(self):
         current = self.head
         while current:
-            print(current.data,end="-->")
+            print(current.data,end="→")
             current = current.next
         print("None")
 
 
 obj = LinkedList()
-obj.append(1)
-obj.append(2)
-obj.append(3)
-obj.append(5)
-obj.display()
-obj.delete(3)
-obj.display()
-obj.preappend(4)
+obj.insert_at_head(20)
+obj.insert_at_head(30)
+obj.insert_at_head(40)
+obj.insert_at_tail(100)
 obj.display()
