@@ -26,6 +26,8 @@ def inorder_travel(root):
         inorder_travel(root.left)
         print(root.value, end=" ")
         inorder_travel(root.right)
+
+        # Level order traversal
 def level_order_travel(root):
     if not root:
         return
