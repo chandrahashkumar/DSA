@@ -33,12 +33,12 @@ def level_order_travel(root):
     queue.append(root)
     while queue:
         print(queue)
-        current = queue.popleft()   # remove element N1
-        print(current.value, end=" ")  #   N1
-        if current.left:  # N2
-            queue.append(current.left) # N2
-        if current.right: # N3
-            queue.append(current.right) #3
+        current = queue.popleft()
+        print(current.value, end=" ")
+        if current.left:
+            queue.append(current.left)
+        if current.right:
+            queue.append(current.right)
         print(queue)
 root = Node('N1')
 root.left = Node("N2")
