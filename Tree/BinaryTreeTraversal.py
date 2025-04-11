@@ -1,3 +1,5 @@
+from collections import deque
+
 class Node:
     def __init__(self,key):
         self.left = None
@@ -24,14 +26,24 @@ def inorder_travel(root):
         inorder_travel(root.left)
         print(root.value, end=" ")
         inorder_travel(root.right)
-
-
-
+def level_order_travel(root):
+    if not root:
+        return
+    queue = deque()
+    queue.append(root)
+    while queue:
+        print(queue)
+        current = queue.popleft()   # remove element N1
+        print(current.value, end=" ")  #   N1
+        if current.left:  # N2
+            queue.append(current.left) # N2
+        if current.right: # N3
+            queue.append(current.right) #3
+        print(queue)
 root = Node('N1')
 root.left = Node("N2")
 root.right = Node("N3")
-root.left.left = Node("N4")
-root.left.right = Node("N5")
+root.right.left = Node("NA")
 
 
 print("Pre order traversal")
@@ -42,3 +54,6 @@ postorder_travel(root)
 
 print("\nIn order traversal")
 inorder_travel(root)
+print("\nLevel order traversal")
+level_order_travel(root)
+
