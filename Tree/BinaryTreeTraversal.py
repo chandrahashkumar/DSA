@@ -42,9 +42,9 @@ def level_order_travel(root):
         if current.right:
             queue.append(current.right)
         print(queue)
-root = Node('N1')
-root.left = Node("N2")
-root.right = Node("N3")
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
 root.right.left = Node("NA")
 
 

@@ -31,12 +31,11 @@ class Stack:
 
 
 
-stack = Stack(5)
-stack.push(4)
-stack.push(5)
-stack.push(5)
-stack.push(6)
-stack.push(3)
+stack = Stack(3)
+stack.push(9)
+stack.push(10)
+stack.push(11)
+
 print(f"Popped: {stack.pop()}")
 print(f"Peed: {stack.peek()}")
 stack.display()
