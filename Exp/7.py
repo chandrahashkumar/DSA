@@ -26,8 +26,8 @@ def build_sample_tree():
     root = Node(1)
     root.left = Node(2)
     root.right = Node(3)
-    root.left.right = Node(9)
     root.left.left = Node(11)
+    root.left.right = Node(9)
 
     return root
 
