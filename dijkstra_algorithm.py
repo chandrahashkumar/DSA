@@ -12,7 +12,6 @@ def dijkstra(graph, start):
         # If the current distance is greater than the stored distance, skip it
         if current_distance > shortest_distance[current_node]:
             continue
-
         for neighbor, weight in graph[current_node].items():
             distance = current_distance + weight
 
