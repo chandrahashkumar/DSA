@@ -1,22 +1,25 @@
 import heapq
 def dijkstra(graph, start):
+    # Create a dictionary to  store the  shortest distances from the start node
     shortest_distance = {node: float('infinity') for node in graph}
     shortest_distance[start] = 0
+    # Create a priority queue to keep track of nodes to visit
     priority_queue = [(0, start)]
 
     while priority_queue:
         current_distance, current_node = heapq.heappop(priority_queue)
 
+        # If the current distance is greater than the stored distance, skip it
         if current_distance > shortest_distance[current_node]:
             continue
 
         for neighbor, weight in graph[current_node].items():
             distance = current_distance + weight
 
+            # If a shorter path is found, update the shortest distance
             if distance < shortest_distance[neighbor]:
                 shortest_distance[neighbor] = distance
                 heapq.heappush(priority_queue, (distance, neighbor))
-
 
     return shortest_distance
 
