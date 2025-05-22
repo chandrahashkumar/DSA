@@ -7,7 +7,6 @@ class Graph:
         self.graph.append([u, v, w])
         
     def kruskal_mst(self):
-        # Sort by weight (third element) instead of first element
         self.graph = sorted(self.graph, key=lambda item: item[2])
         parent = [i for i in range(self.V)]
         result = []
@@ -15,7 +14,6 @@ class Graph:
         i = 0
         
         while e < self.V-1 and i < len(self.graph):
-            # Correct order of unpacking: u, v, w instead of w, u, v
             u, v, w = self.graph[i]
             i += 1
             x = self.find(parent, u)
