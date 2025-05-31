@@ -30,7 +30,7 @@ class singly_linkedlist:
 
         current = self.head
         while current.next:
-            if current.next.data ==data:
+            if current.next.data == data:
                 current.next = current.next.next
                 return
             current = current.next
