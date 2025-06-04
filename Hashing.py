@@ -39,10 +39,12 @@ hash_table = HashTable(10)
 hash_table.insert("apple",5)
 hash_table.insert("banana",3)
 hash_table.insert("cherry",8)
+hash_table.insert("Mango",7)
 
 print(hash_table.search("apple")) # 5
 print(hash_table.search("banana")) # 3
 print(hash_table.search("cherry")) # 8
+print(hash_table.search("Mango")) # 7
 
 hash_table.delete("banana")
 print(hash_table.search("banana")) # None
