@@ -33,7 +33,7 @@ class Stack:
             return
         print(self.stack[:self.top+1])
 
-s = Stack(5)
+s = Stack(20)
 for i in range(6):
     s.push(i)
 
@@ -41,4 +41,8 @@ s.display()
 print(s.peek())
 print(s.pop())
 print(s.peek())
+s.push(9)
+s.push(10)
+s.push(77)
+s.push(91)
 s.display()
