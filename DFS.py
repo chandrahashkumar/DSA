@@ -23,7 +23,6 @@ print(f"DFS (Recursive) starting from: {start_vertex}")
 dfs_recursive(graph,start_vertex,visited)
 
 '''
-from filelock.version import version_tuple
 
 
 def dfs_iterative(graph, start):
